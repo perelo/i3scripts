@@ -90,6 +90,7 @@ WINDOW_ICONS = {
     'nautilus': fa.icons['copy'],
     'nemo': fa.icons['copy'],
     'openscad': fa.icons['cube'],
+    'pcmanfm': fa.icons['folder'],
     'pavucontrol': fa.icons['volume-up'],
     'postman': fa.icons['space-shuttle'],
     'rhythmbox': fa.icons['play'],
@@ -105,12 +106,17 @@ WINDOW_ICONS = {
     'thunar': fa.icons['copy'],
     'thunderbird': fa.icons['envelope'],
     'totem': fa.icons['play'],
+    'transmission-gtk': fa.icons['download'],
     'urxvt': fa.icons['terminal'],
+    'vlc': fa.icons['play-circle'],
+    'vym': fa.icons['sitemap'],
     'xfce4-terminal': fa.icons['terminal'],
     'xournal': fa.icons['file-alt'],
     'yelp': fa.icons['code'],
     'zenity': fa.icons['window-maximize'],
     'zoom': fa.icons['comment'],
+    'zathura': fa.icons['file-pdf'],
+    'zotero': fa.icons['book'],
 }
 
 # This icon is used for any application not in the list above
@@ -196,7 +202,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--norenumber_workspaces',
         action='store_true',
-        default=False,
+        default=True,
         help=
         "Disable automatic workspace re-numbering. By default, workspaces are automatically re-numbered in ascending order."
     )
